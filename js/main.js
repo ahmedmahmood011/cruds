@@ -160,7 +160,7 @@ function updateElement(){
                 taxes: taxes.value,
                 ads: ads.value,
                 descount: descount.value,
-                total: total.innerText,
+                total: totalValue,
                 category: category.value,
                 count: count.value,
             }
