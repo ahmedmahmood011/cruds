@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normaliz.css">
+  <title>CRUDS</title>
+</head>
+<body>
+  <!-----  الواجهة بالكامل --->
+  <div class="crud">
+    <div class="container">
+      <div class="content">
+              <!-----الرأس----------->
+      <div class="head">
+        <h2>cruds</h2>
+        <p>product manegemnt system</p>
+      </div>
+      <div class="languish">
+          <button id="ar">عربي</button>
+          <button id="en">En</button>
+      </div>
+      <!-----المدخلات----------->
+      <div class="inputs">
+        <input type="text" placeholder="Title" id="title">
+        <div class="prices">
+          <input type="number" placeholder="Price" id="price">
+          <input type="number" placeholder="Taxes" id="taxes">
+          <input type="number" placeholder="Ads" id="ads">
+          <input type="number" placeholder="Descount" id="descount">
+          <small id="total"></small>
+        </div>
+        <input type="number" placeholder="Count" id="count">
+        <input type="text" placeholder="Category" id="category">
+        <button id="submit">Create</button>
+        <button id="updateValue" style="display:none;">Update</button>
+      </div>
+      <!-----المخارج---------->
+      <div class="outputs">
+        <input type="text" placeholder="Search" id="search">
+        <div class="btnsearch">
+          <button id="searchtitle">Search By Title</button>
+          <div id="deleteAll">
+            <button >Delete All </button>
+          </div>
+          <button id="searchcategory">Search By Category</button>
+        </div>
+        <div class="table">
+          <table>
+            <tr class="heading">
+              <th>Id</th>
+              <th>Title</th>
+              <th>Price</th>
+              <th>Taxes</th>
+              <th>Ads</th>
+              <th>Descount</th>
+              <th>Total</th>
+              <th>Category</th>
+              <th>Count</th>
+              <th>Update</th>
+              <th>Delete</th>
+              <th>Sell</th>
+            </tr>
+            <tbody id="tbody" >
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

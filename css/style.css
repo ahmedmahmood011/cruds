@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui;
+}
+@media (max-width:767px) {
+    
+}
+@media (min-width:768px) {
+    /* .container {
+        width: 760px ;
+        margin: 0 auto;
+    } */
+}
+@media (min-width:992px) {
+    .container {
+        width: 972px ;
+        margin: 0 auto;
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        width: 1170px ;
+        margin: 0 auto;
+    }
+}
+.crud {
+    background: rgb(2,57,98);
+    background: linear-gradient(196deg, rgba(2,57,98,1) 12%, rgba(0,0,0,1) 100%);
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+.crud .container {
+    height: 100vh;
+}
+.crud .content {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.239);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* heading  */
+.crud .head {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* languish  */
+.crud .languish{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.crud .languish button {
+    padding: 10px 20px;
+    background-color: #0081dd;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.crud .languish button:hover {
+    background-color: #0568ae;
+}
+
+/* inputs  */
+.crud .inputs input{
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.crud .inputs input:focus {
+    border: 1px dashed #00ddd2;
+    outline: none;
+}
+.crud .inputs #title {
+    width: 100%;
+}
+.crud .inputs .prices {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+
+}
+.crud .inputs .prices input{
+    width: 20%;
+    flex: 1;
+}
+.crud .inputs .prices small {
+    padding: 10px 10px;
+    width: 20%;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: white;
+    color: #0000009c;
+    border-radius: 10px;
+    font-weight: 500;
+}
+@media (max-width:767px) {
+    .crud .inputs .prices  {
+        flex-wrap: wrap;
+        row-gap: 0;
+    }
+    .crud .inputs .prices small {
+        width: 100%;
+    }
+}
+
+.crud .inputs #submit , #updateValue{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #0081dd;
+    color: white;
+    font-weight: bold;
+}
+.crud .inputs #submit:hover , #updateValue:hover {
+    background-color: #0568ae;
+}
+
+/* Outputs */
+.crud .outputs #search {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+.crud .outputs #search:focus {
+    border: none;
+    outline: none;
+}
+.crud .outputs .btnsearch {
+    display: flex;
+    margin-bottom: 10px;
+} 
+.crud .outputs .btnsearch button {
+    transition: 0.3s;
+}
+.crud .outputs .btnsearch > button {
+    padding: 5px 20px;
+    flex-grow: 2;
+    border: none;
+    cursor: pointer;
+} 
+.crud .outputs .btnsearch > button:first-of-type{
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 2px;
+    background-color: #0081dd;
+    color: white;
+}
+.crud .outputs .btnsearch > button:last-of-type{
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 2px;
+    background-color: #0081dd;
+    color: white;
+}
+.crud .outputs .btnsearch > div button {
+    padding: 10px 20px;
+    flex-grow: 1;
+    border: 1px solid;
+    border:none;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    height: 100%;
+}
+.crud .outputs .btnsearch > div button:hover {
+    background-color: rgb(132, 35, 35);
+}
+.crud .outputs .btnsearch button {
+    background-color: aliceblue;
+}
+.crud .outputs .btnsearch > button:hover {
+    background-color: #0568ae;
+}
+.crud .outputs .table {
+    overflow-x: scroll;
+    max-width: 100%;
+    border: 1px dashed #00ddd2;
+}
+.crud .outputs table {
+    width: 100%;
+    padding: 10px;
+}
+.crud .outputs table tr {
+    margin-top: 10px;
+    display: flex;
+}
+.crud .outputs table tr th{
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    min-width: 70px;
+    margin: 0 5px;
+}
+.crud .outputs table tr th:first-of-type {
+    flex: 0;
+}
+.crud .outputs table tr th:nth-of-type(2) {
+    flex: 2;
+}
+.crud .outputs table tr th button {
+    padding: 5px 10px;
+    font-weight: bold;
+    width: 100%;
+    background-color: #0081dd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.crud .outputs table tr th button:hover {
+    background-color: #0568ae;
+}
